@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rsv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--tools:context="com.shbst.kone_home.GuideActivity"-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/guideViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black" />
+
+    <ImageView
+        android:id="@+id/gui_left_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:visibility="invisible"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/gui_left_w" />
+
+    <ImageView
+        android:id="@+id/gui_right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/gui_right_w" />
+
+
+    <com.shbst.kone_home.Views.GuidePage.RangeSliderView
+        android:id="@+id/rsv_small"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:visibility="gone"
+        rsv:filledColor="#1A5F77" />
+
+    <RelativeLayout
+        android:id="@+id/point_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="117dp"
+        android:layout_marginTop="20dp"
+        android:visibility="visible">
+<!--原 宽度 310-->
+        <View
+            android:id="@+id/view_lain"
+            android:layout_width="310dp"
+            android:layout_height="5dp"
+            android:layout_centerInParent="true"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/ll_point_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <com.shbst.kone_home.Views.FontTextView
+            android:id="@+id/view_red_point"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/blue_round_poit"
+            android:gravity="center"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <com.shbst.kone_home.Views.GuidePage.MediaPlayerView
+        android:id="@+id/video_ftu"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/test_mode"
+        android:background="@color/black"
+        />
+</RelativeLayout>

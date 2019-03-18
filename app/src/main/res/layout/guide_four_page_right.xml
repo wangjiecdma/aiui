@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="30dp"
+    android:orientation="vertical">
+
+    <com.shbst.kone_home.Views.FontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_weight="1"
+        android:text="CONTENT   BACKGROUND  MEDIA"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:background="@color/four_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.shbst.kone_home.Views.FontTextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:text="5"
+            android:textSize="38sp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:src="@drawable/w_edit" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:src="@drawable/red_round" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:background="@color/four_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.shbst.kone_home.Views.FontTextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:text="3"
+            android:textSize="38sp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:src="@drawable/w_time" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:src="@drawable/set_image" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:background="@color/four_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.shbst.kone_home.Views.FontTextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:text="2"
+            android:textSize="38sp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:src="@drawable/w_edit" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:src="@drawable/red_round" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:background="@color/four_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.shbst.kone_home.Views.FontTextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:text="G"
+            android:textSize="38sp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:src="@drawable/w_edit" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:src="@drawable/red_round" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:background="@color/four_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.shbst.kone_home.Views.FontTextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:text="P"
+            android:textSize="38sp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:src="@drawable/w_time" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:src="@drawable/w_play" />
+    </LinearLayout>
+
+
+</LinearLayout>

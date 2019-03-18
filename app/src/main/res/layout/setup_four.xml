@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="生产配置-DOE按钮(DOE Button)"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        >
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/last_page"
+            style="@style/ButtonStyle"
+
+            android:text="上一步(Prev)"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            />
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/next_page"
+            style="@style/ButtonStyle"
+
+            android:text="完成(Complete)"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            >
+
+             <RadioGroup
+                android:id="@+id/doe_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:padding="20dp">
+
+            <com.shbst.kone_home.Views.FontRadioButton
+                android:id="@+id/doe_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:button="@drawable/radio_select"
+                android:paddingLeft="10dp"
+                android:text="没有DOE(Disable DOE Button)"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <com.shbst.kone_home.Views.FontRadioButton
+                android:id="@+id/doe_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:button="@drawable/radio_select"
+                android:paddingLeft="10dp"
+                android:text="有DOE(Enable DOE Button)"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

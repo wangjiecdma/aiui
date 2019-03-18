@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/guide_four_page_floor_item_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="16dp"
+    android:layout_weight="1"
+    android:background="@color/set_date_format"
+    android:minHeight="60dp">
+
+    <com.shbst.kone_home.Views.FontTextView
+        android:id="@+id/floorTextView"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/white"
+        android:textSize="38sp" />
+
+    <ImageView
+        android:id="@+id/mediaImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="147dp" />
+
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="271dp"
+        android:layout_marginRight="80dp" />
+
+    <com.shbst.kone_home.Views.FontTextView
+        android:id="@+id/mediaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mediaImageView"
+        android:text="@string/text"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+    <com.shbst.kone_home.Views.FontTextView
+        android:id="@+id/backgroundTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mediaImageView"
+        android:paddingLeft="5dp"
+        android:text="IMAGE: URBAN"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <com.shbst.kone_home.Views.TextInputView
+        android:id="@+id/inputTextView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/mediaTextView"
+        android:background="@drawable/square"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+</RelativeLayout>

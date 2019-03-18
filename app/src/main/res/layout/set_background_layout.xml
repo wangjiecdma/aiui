@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/slect_pop_views"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ultraDarkGray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#fff"
+                android:textSize="30sp" />
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:id="@+id/floor_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:text="1"
+                android:textColor="#fff"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/image_content"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/set_mode_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.shbst.kone_home.Views.FontRadioButton
+                    android:id="@+id/radio_white"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/set_white"
+                    android:text="WHITE"
+
+                    android:textColor="#313131" />
+
+                <com.shbst.kone_home.Views.FontRadioButton
+                    android:id="@+id/radio_text"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:button="@drawable/set_text"
+                    android:text="TEXT"
+                    android:textColor="#313131" />
+
+                <com.shbst.kone_home.Views.FontRadioButton
+                    android:id="@+id/radio_time"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:button="@drawable/set_time"
+                    android:text="TIME"
+                    android:textColor="#313131" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/image_content"
+            android:orientation="horizontal">
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="235dp"
+                android:gravity="center"
+                android:text="@string/whiteboard"
+                android:textColor="#fff" />
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="@string/text"
+                android:textColor="#fff" />
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="@string/time"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivBgViewf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/slect_pop_views"
+        android:background="@drawable/setup_board" />
+</RelativeLayout>

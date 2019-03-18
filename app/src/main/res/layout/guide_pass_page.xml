@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SETUP>FIRST TIME USAGE SETUP"
+                    android:textColor="@color/lightGray"
+                    android:textSize="10sp" />
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="password"
+                    android:textColor="@color/ultraDarkGray"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <com.shbst.kone_home.Views.GifView
+                android:id="@+id/pagePassGif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:id="@+id/pagePassInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="120dp"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="2dp"
+                android:lines="3"
+                android:singleLine="false"
+                android:text="You can choose a PIN code\nto access setup.\nYou will nee it to make\nchanges to the settings."
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="120dp"
+            android:layout_marginTop="120dp"
+            android:layout_weight="1">
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:id="@+id/passwordInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="center_horizontal"
+                android:text="PASSCODE FOR HOME LIFT"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <com.shbst.kone_home.Views.FontEditView
+                android:id="@+id/inputETView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/passwordInfo"
+                android:background="@null"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:gravity="center_horizontal"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:textColor="#fff"
+                android:textSize="80sp" />
+
+            <include
+                layout="@layout/password_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/inputETView" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

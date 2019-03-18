@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setup_usage_setup"
+                    android:textColor="@color/lightGray"
+                    android:textSize="20sp" />
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/layout_theme"
+                    android:textColor="@color/lightGray"
+                    android:textSize="34sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/pageFileBgImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="131dp"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:id="@+id/pageFiveInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="120dp"
+                android:lineSpacingExtra="2dp"
+                android:lines="3"
+                android:singleLine="false"
+                android:text="@string/gui_theme_page_text"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="120dp"
+            android:layout_marginTop="120dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#404040" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:id="@+id/set_theme_guide_blocks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:drawablePadding="40dp"
+                    android:drawableStart="@drawable/button_select"
+                    android:gravity="center_vertical"
+                    android:text="@string/guide_blocks"
+                    android:textColor="@color/white"
+                    android:textSize="34sp" />
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:id="@+id/set_theme_minimal_spheres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="20dp"
+                    android:drawablePadding="40dp"
+                    android:drawableStart="@drawable/gray_round_minimal_spheres"
+                    android:gravity="center_vertical"
+                    android:text="@string/minimal_spheres"
+                    android:textColor="@color/white"
+                    android:textSize="34sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

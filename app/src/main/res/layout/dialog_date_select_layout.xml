@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/four_color"
+    android:orientation="horizontal"
+    android:visibility="visible">
+
+    <com.shbst.kone_home.Views.GuidePage.TimeSelectView
+        android:id="@+id/time_selectY"
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+
+    <com.shbst.kone_home.Views.GuidePage.TimeSelectView
+        android:id="@+id/time_selectM"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1" />
+
+
+    <com.shbst.kone_home.Views.GuidePage.TimeSelectView
+        android:id="@+id/time_selectD"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1" />
+
+
+</LinearLayout>

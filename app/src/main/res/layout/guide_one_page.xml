@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setup_usage_setup"
+                    android:textColor="@color/lightGray"
+                    android:textSize="20sp" />
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time_and_date"
+                    android:textColor="@color/lightGray"
+                    android:textSize="34sp" />
+            </LinearLayout>
+
+            <com.shbst.kone_home.Views.GifView
+                android:id="@+id/pageOneGif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:id="@+id/pageOneInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="120dp"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="2dp"
+                android:lines="3"
+                android:singleLine="false"
+                android:text="@string/gui_time_page_text"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="120dp"
+            android:layout_marginTop="120dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#404040" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="60dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/guide_one_set_time"
+                    android:layout_width="436dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical">
+
+                    <com.shbst.kone_home.Views.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/Time"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <com.shbst.kone_home.Views.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="60dp"
+                        android:textColor="@color/click_to_set_date"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/guide_one_switch_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="40dp"-->
+                    <!--android:src="@drawable/time" />-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="245dp"
+                        android:layout_marginTop="40dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <com.shbst.kone_home.Views.GuidePage.TimeSelectView
+                            android:id="@+id/time_selectH1"
+                            android:layout_width="77dp"
+                            android:layout_height="match_parent" />
+
+
+                        <com.shbst.kone_home.Views.GuidePage.TimeSelectView
+                            android:id="@+id/time_selectH2"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp" />
+
+                        <ImageView
+                            android:layout_width="42dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/select_time_" />
+
+                        <com.shbst.kone_home.Views.GuidePage.TimeSelectView
+                            android:id="@+id/time_selectM1"
+                            android:layout_width="77dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp" />
+
+                        <com.shbst.kone_home.Views.GuidePage.TimeSelectView
+                            android:id="@+id/time_selectM2"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="invisible"
+                        >
+
+                        <com.shbst.kone_home.Views.FontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="24H"
+                            android:textColor="@color/white"
+                            android:textSize="24sp" />
+
+                        <ImageView
+                            android:id="@+id/guide_one_set_24h_view"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginLeft="30dp"
+                            android:background="@drawable/button_select" />
+
+                        <com.shbst.kone_home.Views.FontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="148dp"
+                            android:text="12H"
+                            android:textColor="@color/white"
+                            android:textSize="24sp" />
+
+                        <ImageView
+                            android:id="@+id/guide_one_set_12h_view"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginLeft="30dp"
+                            android:background="@drawable/button_un" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/guide_one_set_date"
+                    android:layout_width="436dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/setDate"
+                    android:gravity="center_vertical">
+
+                    <com.shbst.kone_home.Views.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/Date"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <com.shbst.kone_home.Views.FontTextView
+                        android:id="@+id/guide_click_to_set_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="60dp"
+                        android:text="@string/click_to_set_date"
+                        android:textColor="@color/click_to_set_date"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/guide_one_switch_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <com.shbst.kone_home.Views.GuidePage.TimeSelectView
+                            android:id="@+id/time_selectY"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+
+                        <com.shbst.kone_home.Views.GuidePage.TimeSelectView
+                            android:id="@+id/time_selectM"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1" />
+
+
+                        <com.shbst.kone_home.Views.GuidePage.TimeSelectView
+                            android:id="@+id/time_selectD"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1" />
+
+
+                    </LinearLayout>
+
+                    <com.shbst.kone_home.Views.FontTextView
+                        android:id="@+id/guide_one_set_format"
+                        android:layout_width="436dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="8dp"
+                        android:padding="5dp"
+                        android:paddingLeft="10dp"
+                        android:text="@string/Format"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <com.shbst.kone_home.Views.FontTextView
+                        android:id="@+id/format_data0"
+                        android:layout_width="436dp"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@color/setDate"
+                        android:gravity="center"
+                        android:text="March 10 2019"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+
+                    <com.shbst.kone_home.Views.FontTextView
+                        android:id="@+id/format_data1"
+                        android:layout_width="436dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/setDate"
+                        android:gravity="center"
+                        android:text="12.10.2019"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+
+                    <com.shbst.kone_home.Views.FontTextView
+                        android:id="@+id/format_data2"
+                        android:layout_width="436dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/setDate"
+                        android:gravity="center"
+                        android:text="12/10/2019"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

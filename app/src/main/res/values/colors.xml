@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black">#000</color>
+
+    <color name="blackOveraly50">#80000000</color>
+    <color name="lineColor">#8d8d8d</color>
+    <color name="lightGray">#ebedf0</color>
+    <color name="ultraDarkGray">#313131</color>
+    <color name="darkGray">#8d8d8d</color>
+    <color name="drawInitTextColor">#4b4b4b</color>
+
+    <color name="gree_color">#58ab27</color>
+    <color name="red_color">#ED1D79</color>
+    <color name="black_color">#000</color>
+    <color name="white_color">#fff</color>
+    <color name="blue_color">#0071B9</color>
+    <color name="blue_color_b">#072B4B</color>
+    <color name="yellow_color">#F9C310</color>
+    <color name="red_kone_color">#C51F25</color>
+    <color name="gray_color">#E9EBEE</color>
+    <color name="gray_dark_color">#8C8C8C</color>
+
+
+    <color name="setDate">#262626</color>
+
+    <color name="white">#FFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="settingFloorItemColor">#FFF</color>
+
+    <color name="theme1_menu_color">#80313131</color>
+
+    <color name="four_color">#242424</color>
+    <color name="click_to_set_date">#636363</color>
+
+    <color name="floorBg">#3a3a3a</color>
+
+    <color name="set_date_format">#262626</color>
+
+    <color name="guide_page_four_select_item">#4d4d4d</color>
+</resources>

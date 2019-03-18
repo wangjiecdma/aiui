@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.shbst.kone_home.Main2Activity">
+
+    <com.shbst.kone_home.Views.VerticalViewPager
+        android:id="@+id/right_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+    </com.shbst.kone_home.Views.VerticalViewPager>
+
+
+
+
+    <ImageView
+        android:id="@+id/l_menu"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/theme1_menu_color"
+        android:src="@drawable/g_menu" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_above="@id/l_menu"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/control_panel"
+        >
+
+        <!--<ImageView-->
+        <!--android:id="@+id/close"-->
+        <!--style="@style/theme1_item_view_layout"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:background="@drawable/un_round_2"-->
+        <!--android:src="@drawable/w_theme1_close" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/open"-->
+        <!--style="@style/theme1_item_view_layout"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_toRightOf="@id/close"-->
+        <!--android:background="@drawable/un_round_2"-->
+        <!--android:src="@drawable/w_theme1_open" />-->
+
+
+        <RelativeLayout
+            android:id="@+id/backgroud_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--android:layout_toRightOf="@id/open"-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/blue_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--android:layout_toRightOf="@id/open"-->
+        </RelativeLayout>
+        <!--android:layout_toRightOf="@id/open"-->
+        <LinearLayout
+            android:id="@+id/left_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/close"
+                style="@style/theme1_item_view_layout"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/un_round_2"
+                android:src="@drawable/open_door_theme_2" />
+
+            <com.shbst.kone_home.Views.OpenDoorImgView
+                android:id="@+id/open"
+                style="@style/theme1_item_view_layout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="80dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.shbst.kone_home.Views.FontTextView
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@color/blackOveraly50"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/black_overlay"
+        android:visibility="invisible"
+        />
+
+    <LinearLayout
+        android:id="@+id/stopService"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/status_stop" />
+
+        <com.shbst.kone_home.Views.FontTextView
+            android:id="@+id/out_of_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/out_of_service"
+            android:textColor="#fff"
+            android:textSize="46sp" />
+    </LinearLayout>
+</RelativeLayout>

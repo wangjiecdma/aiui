@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">KONE</string>
+    <string name="mode_pass">VISITOR MODE (add PIN codes for specific floors, hide private info)</string>
+    <string name="normal_mode">NORMAL MODE</string>
+    <string name="lift_has">LIFT HAS A MAINTENANCE CONTRACT AND THE ALARM IS HANDLED BY THE OPERATOR</string>
+    <string name="emergency_contact">EMERGENCY CONTACT</string>
+    <string name="floor_name">楼层信息</string>
+    <string name="background_media">多媒体背景</string>
+    <string name="time_date">时间 &amp; 日期</string>
+    <string name="wifi">WIFI</string>
+    <string name="enable_wifi">Enable WiFi</string>
+    <string name="kone_call_center">通力呼叫中心</string>
+    <string name="has_anyone_been_hurt">- 有人受伤了吗?</string>
+    <string name="are_you_entrapped_in_the_elevator">- 您被困在电梯里了吗?</string>
+    <string name="does_the_elevator_move">- 电梯移动吗?</string>
+    <string name="are_the_doors_closed">- 门是关着的吗?</string>
+    <string name="how_many_of_you_are_inside">- 有几个人在里面?</string>
+    <string name="setup">设置</string>
+    <string name="content">内容</string>
+    <string name="floor_setup">楼层设置</string>
+    <string name="whiteboard">画板</string>
+    <string name="text">文本</string>
+    <string name="time">时钟</string>
+    <string name="select_media_content_for_floor">为楼层%s选择多媒体显示内容</string>
+    <string name="data_time">时间</string>
+    <string name="data_date">日期</string>
+    <string name="format">格式</string>
+    <string name="select_background_content_for_floor">为楼层%s选择背景图案或颜色</string>
+    <string name="color">颜色</string>
+    <string name="image">图片</string>
+    <string name="lan_chinese">简体中文</string>
+    <string name="lan_en">英文</string>
+    <string name="lan_hk">繁体中文</string>
+    <string name="select_language">选择一个语言</string>
+    <string name="language_setup">语言设置</string>
+    <string name="pin_code_for_setup">设置密码</string>
+    <string name="format_time">时间格式设置</string>
+    <string name="format_date">日期格式设置</string>
+    <string name="access_to_setup">访问设置</string>
+    <string name="enter_pin_code">输入PIN码</string>
+    <string name="koneCallCenter">通力呼叫中心</string>
+    <string name="connected">通话中</string>
+    <string name="now_explain_the_situation">请描述您当前的状态</string>
+    <string name="press_second">按下1秒报警</string>
+    <string name="calling">呼叫中</string>
+
+    <string name="floor">楼</string>
+    <string name="floor_lobby">客厅</string>
+    <string name="floor_parking">车库</string>
+
+    <string name="ui_theme">主题</string>
+
+    <string name="good_morning">早上好</string>
+    <string name="good_afternoon">下午好</string>
+    <string name="good_evening">晚上好</string>
+    <string name="good_night">晚安</string>
+    <string name="happy_new_year">新年快乐</string>
+
+    <!--GUI 引导页面文字-->
+    <string name="gui_time_page_text"> 让我们开始设置您的电梯，\n请设置时间和日期。</string>
+    <string name="gui_floor_page_text">您有访客吗?\n命名每层楼的主要功能\n引导访客选择正确的楼层。</string>
+    <string name="gui_floor_feature_text">您可以为每个楼层\n选择显示的内容和背景。</string>
+    <string name="gui_theme_page_text">请选择并预览电梯按\n钮形状和多媒体界面布局。</string>
+    <string name="enter_page_text">设置完成！\n享受您的KONE家用梯！</string>
+
+    <string name="time_and_date">时间和日期</string>
+    <string name="floors">楼层</string>
+    <string name="floor_context">楼层显示内容</string>
+    <string name="layout_theme">界面布置主题</string>
+
+    <string name="Time">时间</string>
+    <string name="Date">日期</string>
+    <string name="click_to_set_date">点击设置日期</string>
+    <string name="Format">格式</string>
+    <string name="features_content">内容</string>
+    <string name="media_background">媒体背景</string>
+    <string name="setup_usage_setup">设置>用户首次使用设置</string>
+    <string name="out_of_service">退出服务</string>
+    <string name="overweight">超载</string>
+    <string name="pow_show">您可随时点此按钮更改设置内容。</string>
+    <string name="guide_blocks">方形按钮，带楼层导向</string>
+    <string name="minimal_spheres">迷你球形按钮</string>
+
+
+    <string name="kone_welcome">KONE 欢迎您\n感谢您选择KONE家用电梯！采用全优系统，\n创建楼层特定内容，获得独一无二的乘梯体验。祝愉快!</string>
+    <string name="guide_text">文字</string>
+
+    <string name="image_name_dragon">龙</string>
+    <string name="image_name_branch">枝</string>
+    <string name="image_name_bamboo">竹</string>
+    <string name="image_name_light">光</string>
+    <string name="image_name_water">水</string>
+    <string name="color_name_green">绿色</string>
+    <string name="color_name_orange">橙色</string>
+    <string name="color_name_black">黑色</string>
+    <string name="color_name_white">白色</string>
+    <string name="color_name_blue">蓝色 </string>
+    <string name="color_name_yellow">黄色</string>
+    <string name="color_name_red">红色</string>
+    <string name="color_name_gray">灰色 </string>
+    <string name="color_name_dark_gray">深灰色</string>
+
+
+</resources>

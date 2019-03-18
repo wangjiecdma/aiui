@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setup_usage_setup"
+                    android:textColor="@color/lightGray"
+                    android:textSize="20sp" />
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/floor_context"
+                    android:textColor="@color/lightGray"
+                    android:textSize="34sp" />
+            </LinearLayout>
+
+            <com.shbst.kone_home.Views.GifView
+                android:id="@+id/pageFourGif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:id="@+id/pageFourInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="120dp"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="2dp"
+                android:lines="3"
+                android:singleLine="false"
+                android:text="@string/gui_floor_feature_text"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="120dp"
+            android:layout_marginTop="120dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#404040" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content" />
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/features_content"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/background_media"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+            <ListView
+                android:id="@+id/set_floor_item_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="63dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="40dp"
+                android:dividerHeight="16dp"
+                android:fadeScrollbars="false"
+                android:orientation="vertical"
+                android:scrollbars="none">
+
+
+            </ListView>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

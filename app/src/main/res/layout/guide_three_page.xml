@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SETUP>FIRST TIME USAGE SETUP"
+                android:textColor="@color/lightGray"
+                android:textSize="10sp" />
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="floor access"
+                android:textColor="@color/ultraDarkGray"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <com.shbst.kone_home.Views.GifView
+            android:id="@+id/pageThreeGif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+
+        <com.shbst.kone_home.Views.FontTextView
+            android:id="@+id/pageThreeInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="120dp"
+            android:lineSpacingExtra="2dp"
+            android:lines="3"
+            android:singleLine="false"
+            android:text="                   Let`s start to customize your
+                \n                       Home Lift by first setting
+                \n                         things on current time."
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="120dp"
+        android:layout_marginTop="120dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#404040" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="140dp"
+            android:orientation="vertical">
+
+            <com.shbst.kone_home.Views.FontTextView
+                style="@style/guide_three_page_right_text"
+                android:text="5"/>
+            <com.shbst.kone_home.Views.FontTextView
+                style="@style/guide_three_page_right_text"
+                android:text="3"/>
+            <com.shbst.kone_home.Views.FontTextView
+                style="@style/guide_three_page_right_text"
+                android:text="2"/>
+            <com.shbst.kone_home.Views.FontTextView
+                style="@style/guide_three_page_right_text"
+                android:text="G"/>
+            <com.shbst.kone_home.Views.FontTextView
+                style="@style/guide_three_page_right_text"
+                android:text="P"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

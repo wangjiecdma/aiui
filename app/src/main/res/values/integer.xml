@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="display_floor_layout_height">576</integer>
+    <!--<integer name="display_floor_layout_height">1150</integer>-->
+
+    <integer name="floor_item_height">110</integer>
+    <integer name="mainactivity_floor_text_size">80</integer>
+    <integer name="mainactivity_floor_item_height">130</integer>
+    <!--<integer name="mainactivity_floor_text_size">40</integer>-->
+    <!--<integer name="mainactivity_floor_item_height">210</integer>-->
+
+    <integer name="main2activity_floor_text_size">40</integer>
+
+    <integer name="mainactivity_floor_info_size">40</integer>
+
+    <integer name="mainactivity_floor_info_leftmargin">120</integer>
+
+    <integer name="setting_floor_item_height">95</integer>
+    <integer name="setting_floor_item_margintop">15</integer>
+
+    <integer name="theme2_floor_item_h_or_w">100</integer>
+</resources>

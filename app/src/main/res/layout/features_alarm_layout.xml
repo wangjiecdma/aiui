@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/AlarmLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EDAF00"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/status_alarm" />
+
+        <com.shbst.kone_home.Views.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="66dp"
+            android:text="@string/koneCallCenter"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:visibility="gone" />
+
+        <com.shbst.kone_home.Views.FontTextView
+            android:id="@+id/alarm_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Alarm_connect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#59A946"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/Alarm_connect_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/status_jietong" />
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/koneCallCenter"
+                android:textColor="#fff"
+                android:visibility="gone"
+                android:textSize="25sp" />
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/connected"
+                android:textColor="#fff"
+                android:textSize="45sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Alarm_connect_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#529C41"
+            android:orientation="vertical">
+
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="@string/now_explain_the_situation"
+                android:textColor="#fff"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:id="@+id/Alarm_connect_right_childView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:id="@+id/situation_info_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:text="@string/has_anyone_been_hurt"
+                    android:textColor="#fff"
+                    android:textSize="25sp" />
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:id="@+id/situation_info_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/are_you_entrapped_in_the_elevator"
+                    android:textColor="#fff"
+                    android:textSize="25sp" />
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:id="@+id/situation_info_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/does_the_elevator_move"
+                    android:textColor="#fff"
+                    android:textSize="25sp" />
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:id="@+id/situation_info_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/are_the_doors_closed"
+                    android:textColor="#fff"
+                    android:textSize="25sp" />
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:id="@+id/situation_info_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/how_many_of_you_are_inside"
+                    android:textColor="#fff"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

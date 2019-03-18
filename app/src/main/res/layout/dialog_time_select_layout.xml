@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="245dp"
+    android:layout_marginTop="40dp"
+    android:background="@color/four_color"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:visibility="visible">
+
+    <com.shbst.kone_home.Views.GuidePage.TimeSelectView
+        android:id="@+id/time_selectH1"
+        android:layout_width="77dp"
+        android:layout_height="match_parent" />
+
+    <com.shbst.kone_home.Views.GuidePage.TimeSelectView
+        android:id="@+id/time_selectH2"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp" />
+
+    <ImageView
+        android:layout_width="42dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/select_time_" />
+
+    <com.shbst.kone_home.Views.GuidePage.TimeSelectView
+        android:id="@+id/time_selectM1"
+        android:layout_width="77dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp" />
+
+    <com.shbst.kone_home.Views.GuidePage.TimeSelectView
+        android:id="@+id/time_selectM2"
+        android:layout_width="80dp"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

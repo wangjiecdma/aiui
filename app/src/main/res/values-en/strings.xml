@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">KONE</string>
+    <string name="mode_pass">VISITOR MODE (add PIN codes for specific floors, hide private info)</string>
+    <string name="normal_mode">NORMAL MODE</string>
+    <string name="lift_has">LIFT HAS A MAINTENANCE CONTRACT AND THE ALARM IS HANDLED BY THE OPERATOR</string>
+    <string name="emergency_contact">EMERGENCY CONTACT</string>
+    <string name="floor_name">FLOOR NAME</string>
+    <string name="background_media">BACKGROUND MEDIA</string>
+    <string name="time_date">TIME &amp; DATE</string>
+    <string name="wifi">WIFI</string>
+    <string name="enable_wifi">Enable WiFi</string>
+    <string name="kone_call_center">KONE CALL CENTER</string>
+    <string name="has_anyone_been_hurt">- Has anyone been hurt?</string>
+    <string name="are_you_entrapped_in_the_elevator">- Are you entrapped in the elevator?</string>
+    <string name="does_the_elevator_move">- Does the elevator move?</string>
+    <string name="are_the_doors_closed">- Are the doors closed?</string>
+    <string name="how_many_of_you_are_inside">- How many of you are inside?</string>
+    <string name="setup">Setup</string>
+    <string name="content">CONTENT</string>
+    <string name="floor_setup">FLOOR SETUP</string>
+    <string name="whiteboard">WHITEBOARD</string>
+    <string name="text">TEXT</string>
+    <string name="time">TIME</string>
+    <string name="select_media_content_for_floor">SELECT MEDIA CONTENT FOR FLOOR %s</string>
+    <string name="data_time">Time</string>
+    <string name="data_date">Date</string>
+    <string name="format">Format</string>
+    <string name="select_background_content_for_floor">SELECT BACKGROUND CONTENT FOR FLOOR %s</string>
+    <string name="color">COLOR</string>
+    <string name="image">IMAGE</string>
+    <string name="lan_chinese">SIMPLIFIED CHINESE</string>
+    <string name="lan_en">ENGLISH</string>
+    <string name="lan_hk">TRADITIONAL CHINESE</string>
+    <string name="select_language"> Select a language</string>
+    <string name="language_setup">LANGUAGE</string>
+    <string name="pin_code_for_setup">PIN code for setup</string>
+    <string name="access_to_setup">ACCESS TO SETUP</string>
+    <string name="enter_pin_code">ENTER PIN CODE</string>
+    <string name="format_time">TIME FORMAT SETTING</string>
+    <string name="format_date">DATE FORMAT SETTING</string>
+    <string name="koneCallCenter">KONE CALL CENTER</string>
+
+    <string name="now_explain_the_situation">NOW EXPLAIN THE SITUATION</string>
+    <string name="overweight">OVERLOAD</string>
+
+    <!--<string name="press_second">ALARM IN 1 SEC</string>-->
+    <!--<string name="calling">CALLING...</string>-->
+    <!--<string name="connected">CONNECTED</string>-->
+
+    <string name="press_second">Alarm Being Activated</string>
+    <string name="calling">CALLING...</string>
+    <string name="connected">CALL CONNECTED</string>
+    <string name="floor">FLOOR</string>
+    <string name="floor_lobby">LOBBY</string>
+    <string name="floor_parking">PARKING</string>
+
+    <string name="ui_theme">UI THEME</string>
+
+    <string name="good_morning">Good morning</string>
+    <string name="good_afternoon">Good afternoon</string>
+    <string name="good_evening">Good evening</string>
+    <string name="good_night">Nighty night</string>
+    <string name="happy_new_year">HAPPY NEW YEAR</string>
+
+    <!--GUI 引导页面文字-->
+    <string name="gui_time_page_text">Let’s start to customize your\nlift experience by first setting \nthings on current time</string>
+    <string name="gui_floor_page_text">Do you have visitors?\nGuide them by naming your\nfloors.</string>
+    <string name="gui_floor_feature_text">You can choose\nwhat to see on each floor.</string>
+    <string name="gui_theme_page_text">Select and preview lift button\nand media content layout.</string>
+    <string name="enter_page_text">Setup complete!\nEnjoy your KONE MonoSpace Home!</string>
+
+    <string name="time_and_date">time and date</string>
+    <string name="floors">floors</string>
+    <string name="floor_context">floor content</string>
+    <string name="layout_theme">layout theme</string>
+
+    <string name="Time">Time</string>
+    <string name="Date">Date</string>
+    <string name="click_to_set_date">Click to set date</string>
+    <string name="Format">Format</string>
+    <string name="features_content">CONTENT</string>
+    <string name="media_background">MEDIA BACKGROUND</string>
+    <string name="setup_usage_setup">SETUP>FIRST TIME USAGE SETUP</string>
+    <string name="out_of_service">OUT OF SERVICE</string>
+    <string name="pow_show">Settings can be modified here at any time</string>
+    <string name="guide_blocks">GUIDE BLOCKS</string>
+    <string name="minimal_spheres">MINIMAL SPHERES</string>
+
+    <string name="kone_welcome">KONE WELCOME\nThank you for selecting KONE MonoSpace Home! Take full advantage of the system and create floor specific content and make unique experiences. Enjoy!\nBr,KONE</string>
+
+    <string name="guide_text">Text</string>
+    <string name="image_name_dragon">Dragon</string>
+    <string name="image_name_branch">Branch</string>
+    <string name="image_name_bamboo">Bamboo</string>
+    <string name="image_name_light">Light</string>
+    <string name="image_name_water">Water</string>
+
+    <string name="color_name_green">GREEN</string>
+    <string name="color_name_orange">ORANGE</string>
+    <string name="color_name_black">BLACK</string>
+    <string name="color_name_white">WHITE</string>
+    <string name="color_name_blue">BLUE</string>
+    <string name="color_name_yellow">YELLOW</string>
+    <string name="color_name_red">RED</string>
+    <string name="color_name_gray">GRAY</string>
+    <string name="color_name_dark_gray">DARK GRAY</string>
+
+
+
+</resources>

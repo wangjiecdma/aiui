@@ -1,0 +1,163 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--自定义AlertDialog-->
+        <item name="alertDialogTheme">@style/Theme.AppCompat.Light.Dialog.Alert.Self</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.Dialog.Alert.Self"
+        parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <!--修改AlertDialog按钮的颜色-->
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:colorBackground">@color/four_color</item>
+        <item name="textColorAlertDialogListItem">#FFFFFF</item>
+
+    </style>
+
+    <!-- 取消界面转场动画使用-->
+    <style name="MTheme" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/Animation</item>
+    </style>
+
+    <style name="Animation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+
+    <style name="theme0_floor_text_style">
+        <item name="android:layout_width">110dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">80sp</item>
+    </style>
+
+    <style name="theme0_floor_information_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">120dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="setup_edit_date">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/square</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="setup_edit_date_none">
+        <item name="android:layout_height">match_parent</item>
+        <!--<item name="android:background">@drawable/square</item>-->
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="popwin_set_content">
+        <item name="android:windowEnterAnimation">@anim/setpopu_show</item>
+        <item name="android:windowExitAnimation">@anim/setpopu_cancel</item>
+    </style>
+
+    <style name="popwin_set_background">
+        <item name="android:windowEnterAnimation">@anim/setback_show</item>
+        <item name="android:windowExitAnimation">@anim/setback_cancel</item>
+    </style>
+
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popushow</item>
+        <item name="android:windowExitAnimation">@anim/popucancel</item>
+    </style>
+
+    <style name="key_image">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/un_round</item>
+    </style>
+
+    <style name="key_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="theme1_item_view_layout">
+        <item name="android:layout_width">115dp</item>
+        <item name="android:layout_height">115dp</item>
+    </style>
+
+    <style name="Widget.GifView" parent="@android:style/Widget" />
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="guide_three_page_right_text">
+        <item name="android:layout_width">160dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:drawablePadding">30dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">60sp</item>
+        <item name="android:drawableEnd">@drawable/w_keypad</item>
+    </style>
+
+    <style name="set_floor_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">69dp</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:background">@color/floorBg</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:text">@string/floor</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+
+    <style name="ButtonStyle">
+        <item name="android:layout_width">188px</item>
+        <item name="android:layout_height">52px</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+</resources>

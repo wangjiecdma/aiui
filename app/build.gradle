@@ -1,0 +1,89 @@
+import java.text.SimpleDateFormat
+
+apply plugin: 'com.android.application'
+
+static def buildTime() {
+    def df = new SimpleDateFormat("yyMMdd")
+    df.setTimeZone(TimeZone.getDefault())
+    return df.format(new Date())
+}
+
+static long getBuildCount() {
+    File file = new File("buildCount")
+    if (file.exists() && file.isDirectory()) file.delete()
+    if (!file.exists()) file.createNewFile()
+
+    FileInputStream input = new FileInputStream(file)
+    StringBuffer fileCount = new StringBuffer()
+    for (String count : input.readLines("UTF-8")) {
+        fileCount.append(count)
+    }
+    input.close()
+    String countString = fileCount.toString()
+    int countInt
+    if (countString == null || countString.length() == 0) {
+        countInt = 0
+    } else {
+        countInt = Long.parseLong(countString)
+    }
+    int newCount = countInt + 1
+    FileOutputStream output = new FileOutputStream(file)
+    output.write(newCount.toString().getBytes("UTF-8"))
+    output.flush()
+    output.close()
+    return countInt
+}
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.shbst.kone_home"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 26
+        versionName "1.2.5"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('szm.jks')//签名文件路径，
+            storePassword '000000'
+            keyAlias 'szm'
+            keyPassword '000000'
+        }
+        debug {
+            storeFile file('szm.jks')//签名文件路径，
+            storePassword '000000'
+            keyAlias 'szm'
+            keyPassword '000000'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "${variant.versionName}-${variant.name}-${buildTime()}-${getBuildCount()}-admin.apk"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.0.0-beta1'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.google.code.gson:gson:2.8.1'
+    //    implementation project(':singlechipsdk')
+    implementation files('libs/classes.jar')
+    //    implementation 'xiaofei.library:hermes-eventbus:0.3.0'
+    implementation files('libs/AIUI.jar')
+    implementation files('libs/Msc.jar')
+    implementation files('libs/com.baidu.tts_2.3.2.20180713_6101c2a.jar')
+}

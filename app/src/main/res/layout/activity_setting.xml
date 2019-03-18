@@ -1,0 +1,898 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242424"
+    android:orientation="vertical"
+    tools:context="com.shbst.kone_home.SettingActivity">
+
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <ImageView
+        android:id="@+id/exit_menu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:src="@drawable/gl_menu" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/exit_menu">
+
+        <RelativeLayout
+            android:layout_width="900dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="900dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mode"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:visibility="gone" />
+
+            <RadioGroup
+                android:id="@+id/mode_radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <com.shbst.kone_home.Views.FontRadioButton
+                    android:id="@+id/normal_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:button="@drawable/radio_select"
+                    android:paddingLeft="10dp"
+                    android:text="@string/normal_mode"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+                <com.shbst.kone_home.Views.FontRadioButton
+                    android:id="@+id/visitor_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:button="@drawable/radio_select"
+                    android:paddingLeft="10dp"
+                    android:text="@string/mode_pass"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/setup"
+                android:textColor="#fff"
+                android:textSize="30sp" />
+
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/emergency_contact"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <com.shbst.kone_home.Views.FontRadioButton
+                android:id="@+id/emergency_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@null"
+                android:button="@drawable/radio_select"
+                android:checked="true"
+                android:paddingLeft="10dp"
+                android:text="@string/lift_has"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/emergency_contact"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/language_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/language_setup"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:id="@+id/language_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginStart="60dp"
+                    android:textColor="#fff"
+                    android:textSize="25sp" />
+
+                <RadioGroup
+                    android:id="@+id/language_radio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <com.shbst.kone_home.Views.FontRadioButton
+                        android:id="@+id/enRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@null"
+                        android:button="@drawable/radio_select"
+                        android:paddingLeft="10dp"
+                        android:text="ENGLISH"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+
+                    <com.shbst.kone_home.Views.FontRadioButton
+                        android:id="@+id/hkRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@null"
+                        android:button="@drawable/radio_select"
+                        android:paddingLeft="10dp"
+                        android:text="繁體中文"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <com.shbst.kone_home.Views.FontRadioButton
+                        android:id="@+id/chineseRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@null"
+                        android:button="@drawable/radio_select"
+                        android:paddingLeft="10dp"
+                        android:text="简体中文"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/floor_setup"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:gravity="left"
+                    android:text="@string/floor_name"
+                    android:textColor="#adadad"
+                    android:textSize="16sp" />
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="210dp"
+                    android:gravity="center"
+                    android:text="@string/content"
+                    android:textColor="#adadad"
+                    android:textSize="16sp" />
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:gravity="center"
+                    android:text="@string/background_media"
+                    android:textColor="#adadad"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<com.shbst.kone_home.Views.FontTextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="5"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="60sp" />-->
+
+            <!--<com.shbst.kone_home.Views.FontEditView-->
+            <!--android:id="@+id/edit_floor5"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:background="@drawable/square"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="30sp" />-->
+
+            <!--&lt;!&ndash;<com.makeramen.roundedimageview.RoundedImageView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="100dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="100dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginLeft="100dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:scaleType="center"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:src="@drawable/ad"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:riv_border_color="#333333"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:riv_border_width="2dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:riv_corner_radius="25dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:riv_mutate_background="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:riv_oval="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:riv_tile_mode="repeat" />&ndash;&gt;-->
+            <!--<ImageView-->
+            <!--android:id="@+id/content_floor5"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="100dp"-->
+            <!--android:background="@drawable/round" />-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/background_floor5"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="100dp"-->
+            <!--android:background="@drawable/round" />-->
+            <!--</LinearLayout>-->
+
+            <!--<com.shbst.kone_home.Views.FontEditView-->
+            <!--android:id="@+id/text_floor5"-->
+            <!--android:layout_width="280dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_marginLeft="360dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:background="@drawable/square"-->
+            <!--android:textColor="#fff"-->
+            <!--android:visibility="gone" />-->
+            <LinearLayout
+                android:id="@+id/floor_Item_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<com.shbst.kone_home.Views.FontTextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="3"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="60sp" />-->
+
+            <!--<com.shbst.kone_home.Views.FontEditView-->
+            <!--android:id="@+id/edit_floor4"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:background="@drawable/square"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="30sp" />-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/content_floor4"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="100dp"-->
+            <!--android:background="@drawable/round" />-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/background_floor4"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="100dp"-->
+            <!--android:background="@drawable/round" />-->
+            <!--</LinearLayout>-->
+
+            <!--<com.shbst.kone_home.Views.FontEditView-->
+            <!--android:id="@+id/text_floor4"-->
+            <!--android:layout_width="280dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_marginLeft="360dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:background="@drawable/square"-->
+            <!--android:textColor="#fff"-->
+            <!--android:visibility="gone" />-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<com.shbst.kone_home.Views.FontTextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="2"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="60sp" />-->
+
+            <!--<com.shbst.kone_home.Views.FontEditView-->
+            <!--android:id="@+id/edit_floor3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:background="@drawable/square"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="30sp" />-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/content_floor3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="100dp"-->
+            <!--android:background="@drawable/round" />-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/background_floor3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="100dp"-->
+            <!--android:background="@drawable/round" />-->
+            <!--</LinearLayout>-->
+
+            <!--<com.shbst.kone_home.Views.FontEditView-->
+            <!--android:id="@+id/text_floor3"-->
+            <!--android:layout_width="280dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_marginLeft="360dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:background="@drawable/square"-->
+            <!--android:textColor="#fff"-->
+            <!--android:visibility="gone" />-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<com.shbst.kone_home.Views.FontTextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="G"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="60sp" />-->
+
+            <!--<com.shbst.kone_home.Views.FontEditView-->
+            <!--android:id="@+id/edit_floor2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:background="@drawable/square"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="30sp" />-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/content_floor2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="100dp"-->
+            <!--android:background="@drawable/round" />-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/background_floor2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="100dp"-->
+            <!--android:background="@drawable/round" />-->
+            <!--</LinearLayout>-->
+
+            <!--<com.shbst.kone_home.Views.FontEditView-->
+            <!--android:id="@+id/text_floor2"-->
+            <!--android:layout_width="280dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_marginLeft="360dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:background="@drawable/square"-->
+            <!--android:textColor="#fff"-->
+            <!--android:visibility="gone" />-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<com.shbst.kone_home.Views.FontTextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="P"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="60sp" />-->
+
+            <!--<com.shbst.kone_home.Views.FontEditView-->
+            <!--android:id="@+id/edit_floor1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:background="@drawable/square"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="30sp" />-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/content_floor1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="100dp"-->
+            <!--android:background="@drawable/round" />-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/background_floor1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="100dp"-->
+            <!--android:background="@drawable/round" />-->
+            <!--</LinearLayout>-->
+
+            <!--<com.shbst.kone_home.Views.FontEditView-->
+            <!--android:id="@+id/text_floor1"-->
+            <!--android:layout_width="280dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_marginLeft="360dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:background="@drawable/square"-->
+            <!--android:textColor="#fff"-->
+            <!--android:visibility="gone" />-->
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:text="AUTHENTICATION"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:id="@+id/setup_lock"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pin_code_for_setup"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <com.shbst.kone_home.Views.FontEditView
+                    android:id="@+id/setup_pass"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="93dp"
+                    android:background="@drawable/square"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberPassword"
+                    android:textColor="#fff"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/floor_lock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="PIN code for floor"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="vertical">
+
+                    <com.shbst.kone_home.Views.ListViewForScrollView
+                        android:id="@+id/floor_pass_list"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content" />
+
+                    <com.shbst.kone_home.Views.FontTextView
+                        android:id="@+id/add_button"
+                        android:layout_width="270dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/square"
+                        android:gravity="center"
+                        android:text="ADD A PIN CODE FOR FLOOR"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:text="@string/ui_theme"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/theme_radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <com.shbst.kone_home.Views.FontRadioButton
+                    android:id="@+id/guideRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:button="@drawable/radio_select"
+                    android:paddingLeft="10dp"
+                    android:text="@string/guide_blocks"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+                <com.shbst.kone_home.Views.FontRadioButton
+                    android:id="@+id/miniRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:button="@drawable/radio_select"
+                    android:paddingLeft="10dp"
+                    android:text="@string/minimal_spheres"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:text="@string/time_date"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="35dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/data_time"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/date_setTime"
+                    style="@style/setup_edit_date_none"
+                    android:layout_width="260dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginStart="50dp"
+                    android:orientation="horizontal">
+
+                    <com.shbst.kone_home.Views.FontTextView
+                        android:id="@+id/time_H"
+                        android:layout_width="55dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/square"
+                        android:gravity="center"
+                        android:text="12"
+                        android:textColor="#fff"
+                        android:textSize="40sp" />
+
+                    <com.shbst.kone_home.Views.FontTextView
+                        android:id="@+id/time_H_2"
+                        android:layout_width="55dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/square"
+                        android:gravity="center"
+                        android:text="12"
+                        android:textColor="#fff"
+                        android:textSize="40sp" />
+
+
+                    <com.shbst.kone_home.Views.FontTextView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="#fff"
+                        android:textSize="40sp" />
+
+                    <com.shbst.kone_home.Views.FontTextView
+                        android:id="@+id/time_m"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/square"
+                        android:gravity="center"
+                        android:text="00"
+                        android:textColor="#fff"
+                        android:textSize="40sp" />
+
+                    <com.shbst.kone_home.Views.FontTextView
+                        android:id="@+id/time_m_2"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/square"
+                        android:gravity="center"
+                        android:text="00"
+                        android:textColor="#fff"
+                        android:textSize="40sp" />
+                </LinearLayout>
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:gravity="center"
+                    android:text="@string/format"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:visibility="invisible"
+                    />
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:id="@+id/format_time"
+                    style="@style/setup_edit_date"
+                    android:layout_width="150dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="12H"
+                    android:visibility="invisible"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="100dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/data_date"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/data_date"
+                    style="@style/setup_edit_date_none"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginStart="50dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <com.shbst.kone_home.Views.FontTextView
+                        android:id="@+id/dataY"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/square"
+                        android:gravity="center"
+                        android:text="00"
+                        android:textColor="#fff"
+                        android:textSize="40sp" />
+
+                    <com.shbst.kone_home.Views.FontTextView
+                        android:id="@+id/dataM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/square"
+                        android:gravity="center"
+                        android:text="00"
+                        android:textColor="#fff"
+                        android:textSize="40sp" />
+
+                    <com.shbst.kone_home.Views.FontTextView
+                        android:id="@+id/dataD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/square"
+                        android:gravity="center"
+                        android:text="00"
+                        android:textColor="#fff"
+                        android:textSize="40sp" />
+                </LinearLayout>
+
+                <!--<com.shbst.kone_home.Views.FontTextView-->
+                <!--android:id="@+id/data_date"-->
+                <!--style="@style/setup_edit_date"-->
+                <!--android:layout_width="260dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="80dp"-->
+                <!--android:layout_marginStart="50dp"-->
+                <!--android:text="01/01/2019" />-->
+
+                <!--<com.shbst.kone_home.Views.FontEditView-->
+                <!--android:id="@+id/date_day"-->
+                <!--style="@style/setup_edit_date"-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_marginLeft="80dp"-->
+                <!--android:layout_marginStart="50dp"-->
+                <!--android:text="1" />-->
+
+                <!--<com.shbst.kone_home.Views.FontEditView-->
+                <!--android:id="@+id/date_M"-->
+                <!--style="@style/setup_edit_date"-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginStart="10dp"-->
+                <!--android:text="1" />-->
+
+                <!--<com.shbst.kone_home.Views.FontEditView-->
+                <!--android:id="@+id/date_Y"-->
+                <!--style="@style/setup_edit_date"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginStart="10dp"-->
+                <!--android:text="2019" />-->
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="35dp"
+                    android:gravity="center"
+                    android:text="@string/format"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+                <com.shbst.kone_home.Views.FontTextView
+                    android:id="@+id/format_data"
+                    style="@style/setup_edit_date"
+                    android:layout_width="150dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
+                    android:text="1/1/2019"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <!--<com.shbst.kone_home.Views.FontTextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="88dp"-->
+            <!--android:text="@string/wifi"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="20sp" />-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_marginTop="50dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<com.shbst.kone_home.Views.FontTextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginStart="20dp"-->
+            <!--android:text="@string/enable_wifi"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="20sp" />-->
+
+            <!--<com.shbst.kone_home.Views.SlidButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="600dp"-->
+            <!--android:layout_marginTop="10dp" />-->
+
+            <!--</LinearLayout>-->
+
+
+            <com.shbst.kone_home.Views.FontButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/reset_app"
+                android:text="恢复出厂设置"
+                android:textSize="30dp"
+                android:layout_marginBottom="50dp"
+                android:theme="@android:style/Widget.Holo.Button"
+                android:visibility="gone"
+
+                />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/settup"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="0dp"
+            />
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/set_board"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/setup_board"
+        android:visibility="gone" />
+
+</RelativeLayout>

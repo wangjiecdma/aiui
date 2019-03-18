@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="60dp"
+    android:layout_marginRight="140dp"
+    android:orientation="vertical">
+
+    <com.shbst.kone_home.Views.FontTextView
+        style="@style/guide_three_page_right_text"
+        android:text="5"/>
+    <com.shbst.kone_home.Views.FontTextView
+        style="@style/guide_three_page_right_text"
+        android:text="3"/>
+    <com.shbst.kone_home.Views.FontTextView
+        style="@style/guide_three_page_right_text"
+        android:text="2"/>
+    <com.shbst.kone_home.Views.FontTextView
+        style="@style/guide_three_page_right_text"
+        android:text="G"/>
+    <com.shbst.kone_home.Views.FontTextView
+        style="@style/guide_three_page_right_text"
+        android:text="P"/>
+</LinearLayout>

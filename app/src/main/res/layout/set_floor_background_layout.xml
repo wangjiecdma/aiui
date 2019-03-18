@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/slect_pop_views"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ultraDarkGray">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="28sp" />
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:id="@+id/floor_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="1"
+                android:textColor="#fff"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/color_background"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/color"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:scrollbars="none">
+
+                <RadioGroup
+                    android:id="@+id/set_color_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <com.shbst.kone_home.Views.FontRadioButton
+                        android:id="@+id/radio_green"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/gree_round"
+                        android:text="#58ab27"
+                        android:textColor="#313131"
+                        android:textSize="8sp" />
+
+                    <com.shbst.kone_home.Views.FontRadioButton
+                        android:id="@+id/radio_red"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/red_round"
+                        android:text="#ED1D79"
+                        android:textColor="#313131"
+                        android:textSize="8sp" />
+
+                    <com.shbst.kone_home.Views.FontRadioButton
+                        android:id="@+id/radio_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/black_round"
+                        android:text="#000000"
+                        android:textColor="#313131"
+                        android:textSize="8sp" />
+
+                    <com.shbst.kone_home.Views.FontRadioButton
+                        android:id="@+id/radio_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/white_round"
+                        android:text="#FFFFFF"
+                        android:textColor="#313131"
+                        android:textSize="8sp"
+                        android:visibility="gone"
+                        />
+
+                    <com.shbst.kone_home.Views.FontRadioButton
+                        android:id="@+id/radio_blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/blue_round"
+                        android:text="#0071B9"
+                        android:textColor="#313131"
+                        android:textSize="8sp" />
+
+                    <com.shbst.kone_home.Views.FontRadioButton
+                        android:id="@+id/radio_yellow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/yellow_round"
+                        android:text="#F9C310"
+                        android:textColor="#313131"
+                        android:textSize="8sp" />
+
+                    <com.shbst.kone_home.Views.FontRadioButton
+                        android:id="@+id/radio_kone_red"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/red_kone_round"
+                        android:text="#C51F25"
+                        android:textColor="#313131"
+                        android:textSize="8sp" />
+
+                    <com.shbst.kone_home.Views.FontRadioButton
+                        android:id="@+id/radio_gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/gray_round"
+                        android:text="#E9EBEE"
+                        android:textColor="#313131"
+                        android:textSize="8sp"
+                        android:visibility="gone"
+
+                        />
+
+                    <com.shbst.kone_home.Views.FontRadioButton
+                        android:id="@+id/radio_gray_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/gray_dark_round"
+                        android:text="#8C8C8C"
+                        android:textColor="#313131"
+                        android:textSize="8sp" />
+                </RadioGroup>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/image_background"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_below="@+id/color_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/image"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:scrollbars="none">
+
+                <RadioGroup
+                    android:id="@+id/set_image_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <com.shbst.kone_home.Views.FontRadioButton
+                        android:id="@+id/image_button_dragon"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/image_dragon_btn"
+                        android:text="spring"
+                        android:textColor="#313131"
+                        android:textSize="8sp" />
+
+                    <com.shbst.kone_home.Views.FontRadioButton
+                        android:id="@+id/image_button_branch"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/image_branch_btn"
+                        android:text="mouth"
+                        android:textColor="#313131"
+                        android:textSize="8sp" />
+
+                    <com.shbst.kone_home.Views.FontRadioButton
+                        android:id="@+id/image_button_bamboo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/image_bamboo_btn"
+                        android:text="neight"
+                        android:textColor="#313131"
+                        android:textSize="8sp" />
+
+                    <com.shbst.kone_home.Views.FontRadioButton
+                        android:id="@+id/image_button_light"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/image_lights_btn"
+                        android:text="neight"
+                        android:textColor="#313131"
+                        android:textSize="8sp" />
+
+                    <com.shbst.kone_home.Views.FontRadioButton
+                        android:id="@+id/image_button_water"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/image_water_btn"
+                        android:text="neight"
+                        android:textColor="#313131"
+                        android:textSize="8sp" />
+
+
+                </RadioGroup>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/video_background"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_below="@+id/image_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="IMAGE"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:scrollbars="none">
+
+                <RadioGroup
+                    android:id="@+id/set_video_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <com.shbst.kone_home.Views.FontRadioButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:button="@drawable/set_image" />
+                </RadioGroup>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivBgViewf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/slect_pop_views"
+        android:background="@drawable/setup_board" />
+
+
+</RelativeLayout>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#232323"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/pass_set_menu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:src="@drawable/gl_menu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pass_set_menu"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="600dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/key1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:id="@+id/key_image1"
+                        style="@style/key_image" />
+
+                    <com.shbst.kone_home.Views.FontTextView
+                        android:id="@+id/key_text1"
+                        style="@style/key_text"
+                        android:text="1" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/key2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="25dp">
+
+                    <ImageView
+                        android:id="@+id/key_image2"
+                        style="@style/key_image" />
+
+                    <com.shbst.kone_home.Views.FontTextView
+                        android:id="@+id/key_text2"
+                        style="@style/key_text"
+                        android:text="2" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/key3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="25dp">
+
+                    <ImageView
+                        android:id="@+id/key_image3"
+                        style="@style/key_image" />
+
+                    <com.shbst.kone_home.Views.FontTextView
+                        android:id="@+id/key_text3"
+                        style="@style/key_text"
+                        android:text="3" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/key4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:id="@+id/key_image4"
+                        style="@style/key_image" />
+
+                    <com.shbst.kone_home.Views.FontTextView
+                        android:id="@+id/key_text4"
+                        style="@style/key_text"
+                        android:text="4" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/key5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="25dp">
+
+                    <ImageView
+                        android:id="@+id/key_image5"
+                        style="@style/key_image" />
+
+                    <com.shbst.kone_home.Views.FontTextView
+                        android:id="@+id/key_text5"
+                        style="@style/key_text"
+                        android:text="5" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/key6"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="25dp">
+
+                    <ImageView
+                        android:id="@+id/key_image6"
+                        style="@style/key_image" />
+
+                    <com.shbst.kone_home.Views.FontTextView
+                        android:id="@+id/key_text6"
+                        style="@style/key_text"
+                        android:text="6" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/key7"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:id="@+id/key_image7"
+                        style="@style/key_image" />
+
+                    <com.shbst.kone_home.Views.FontTextView
+                        android:id="@+id/key_text7"
+                        style="@style/key_text"
+                        android:text="7" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/key8"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="25dp">
+
+                    <ImageView
+                        android:id="@+id/key_image8"
+                        style="@style/key_image" />
+
+                    <com.shbst.kone_home.Views.FontTextView
+                        android:id="@+id/key_text8"
+                        style="@style/key_text"
+                        android:text="8" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/key9"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="25dp">
+
+                    <ImageView
+                        android:id="@+id/key_image9"
+                        style="@style/key_image" />
+
+                    <com.shbst.kone_home.Views.FontTextView
+                        android:id="@+id/key_text9"
+                        style="@style/key_text"
+                        android:text="9" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/key_cancel"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:id="@+id/key_cancel_image"
+                        style="@style/key_image" />
+
+                    <ImageView
+                        android:id="@+id/key_cancel_content"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/key_un_cancel" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/key0"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="25dp">
+
+                    <ImageView
+                        android:id="@+id/key_image0"
+                        style="@style/key_image" />
+
+                    <com.shbst.kone_home.Views.FontTextView
+                        android:id="@+id/key_text0"
+                        style="@style/key_text"
+                        android:text="0" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/key_enter"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="25dp">
+
+                    <ImageView
+                        android:id="@+id/key_enter_image"
+                        style="@style/key_image" />
+
+                    <ImageView
+                        android:id="@+id/key_enter_content"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/key_un_enter" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:text="@string/access_to_setup"
+                android:textColor="#fff"
+                android:textSize="30sp" />
+
+            <com.shbst.kone_home.Views.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/enter_pin_code"
+                android:textColor="#fff"
+                android:textSize="50sp" />
+
+            <com.shbst.kone_home.Views.FontEditView
+                android:id="@+id/set_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:background="@null"
+                android:cursorVisible="false"
+                android:gravity="center_horizontal"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="#fff"
+                android:textSize="60sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
